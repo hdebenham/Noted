@@ -44,20 +44,33 @@ p {
   margin: 0 2% 20px;
 }
 
+.half {
+  width: 46%;
+  float:left;
+  position: relative;
+  min-height: 1px;
+  margin: 0 2% 20px;
+}
+
 /* HEADER */
 header {
   color: #FFF;
   background: #F9510F;
   background-image: linear-gradient(222deg, #FA9769 0%, #F9510F 93%);
+  height: auto;
 }
 
 header nav {
   padding: 1em 0;
 }
 
+header nav.container {
+  vertical-align: center;
+}
+
 header nav ul {
   display: inline;
-  text-aline: right;
+  text-align: right;
   float: right;
   margin: 0;
 }
@@ -96,7 +109,7 @@ header .hero {
 header .hero h1 {
   font-size: 48px;
   font-weight: normal;
-  margin: 95px 0 0;
+  margin: 50px 0 0;
 }
 
 header .hero p {
@@ -108,20 +121,20 @@ header .hero p {
 
 header .hero img {
   display: block;
-  margin: 3em auto 0;
-  width: 55%;
+  margin: 1em auto 0;
+  width: 100%;
   position: relative;
-  left: 10px;
-  float: right;
-  bottom: -2.5em;
-  top: 100px;
+  top: 20px;
+  padding: 0;
+  left: 0;
+  right: 0;
 }
 
+
 .inner-wrap {
-  width: 40%;
-  margin: 0 0 0 40px;
-  float: left;
-  padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0 0 10px 0;
 
 }
 /* Buttons */
@@ -333,7 +346,7 @@ header .hero img {
 
 /* Footer */
 footer {
-  height: 200px;
+  height: auto;
   color: #FFF;
   background: #F25E38;
   position: relative;
@@ -346,6 +359,7 @@ footer p, footer nav ul {
   font-weight: 100;
   text-align: center;
   margin: 10px auto 0;
+  padding: 0;
 }
 
 footer nav ul li {
@@ -370,6 +384,7 @@ footer .logo {
   .container {
     width: 750px;
   }
+
 }
 /* Laptop */
 @media (min-width: 992px) {
@@ -384,6 +399,41 @@ footer .logo {
   }
   .one-fourth {
     width: 21%;
+  }
+
+  .half {
+    width: 46%;
+  }
+
+  header .hero h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin: 100px 0 0;
+  }
+
+  header .hero p {
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 100;
+    margin: 10px 0 40px;
+  }
+
+  header .hero img {
+    display: block;
+    margin: 1em auto 0;
+    width: 55%;
+    position: relative;
+    left: -10px;
+    float: right;
+    top: 150px;
+  }
+
+  .inner-wrap {
+    width: 40%;
+    margin: 0 0 0 40px;
+    float: left;
+    padding: 0 0 100px 0;
+
   }
   footer {
     height: 100px;
@@ -400,5 +450,15 @@ footer .logo {
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+  }
+
+  header .hero img {
+    display: block;
+    margin: 1em auto 0;
+    width: 55%;
+    position: relative;
+    left: -10px;
+    float: right;
+    top: 100px;
   }
 }
