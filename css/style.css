@@ -438,6 +438,10 @@ footer .logo {
   margin-right: 8px;
 }
 
+.left-nav #select {
+    background: rgba(255, 255, 255, 0.3);
+}
+
 .left-nav .settings {
   position: absolute;
   width: 100%;
@@ -600,6 +604,7 @@ a .item-box {
   display: inline-block;
   float: left;
   vertical-align: center;
+  text-overflow: ellipsis;
 }
 
 .item-box .date {
