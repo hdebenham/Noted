@@ -62,3 +62,63 @@
     font-family: "Lato", Helvetica, Arial, sans-serif;
     font-weight: 100;
 }
+
+
+
+
+/* drop up */
+
+.dropup {
+    list-style: none;
+	padding: 0;
+	margin: 0 0;
+    float: right;
+    display: inline-block;
+}
+.dropup .dropup-trigger { position: relative; }
+.dropup .dropup-submenu {
+    position: absolute;
+    bottom: 100%;
+    right:0; /* dropdown left or right */
+    z-index: 1000;
+    display: none;
+    min-width: 100px;
+    list-style: none;
+	padding: 10px 20px 20px 0;
+	margin: 20px 0 0;
+}
+.dropup .dropup-open .dropup-submenu { 
+    display: block; 
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.30);
+    border-radius: 4px;
+}
+
+.dropup .dropup-open .dropup-submenu:after {
+    content:" ";
+    position: absolute;
+    border-style: solid;
+    border-width: 8px 8px 0px;
+    border-color: #FFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -8px;
+    right: 10px;
+}
+
+.dropup .dropup-open .dropup-submenu li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.dropup .dropup-open .dropup-submenu li:last-child {
+    margin-bottom: 0px;
+}
+
+.dropup .dropup-open .dropup-submenu li a {
+    color: #F06946;
+    text-decoration: none;
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+}
